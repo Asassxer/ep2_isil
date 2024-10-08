@@ -1,0 +1,403 @@
+/* styles.css */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #4c125e48;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 120px;
+    z-index: 999;
+    font-family: 'Ubuntu', sans-serif; /* Aplicar la fuente Ubuntu */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 10px;
+    
+}
+
+/*
+nav li a{
+    color: beige;
+    text-decoration: none;
+}
+
+nav li a:hover{
+    color: #e7e709;
+    text-decoration: none;
+}
+*/
+
+nav li a {
+    transition: all 0.3s ease; /* Suaviza la transición */
+    color: beige;
+}
+
+nav li a:hover {
+    color: #9225eb;
+    text-decoration: none;
+    background-color: #333333; /* Cambia el color de fondo */
+    padding: 5px; /* Añade un pequeño padding */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+
+.logo{
+    padding: 0 15px;
+}
+.logo img{
+    width: 95px;
+    height: auto;
+}
+
+.iconos {
+    display: flex;
+    
+}
+
+.iconos a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 18px;
+}
+.iconos a:hover {
+   
+    color: #dfd6d6;
+    
+}
+
+
+/* aquì se implementan los estilos css para la seccion uno*/
+
+.principal {
+    background-image: url(/imagen/pag1.jpg);
+    background-size: contain;
+    background-position: center;
+    height: 500px; /* Ajusta la altura según tus necesidades */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenidouno {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    color: #fff;
+    padding: 2px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.contenidouno h1{
+    margin-top: 200px;
+    margin-bottom: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: beige;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.contenidouno h2{
+    margin-bottom: 30px;
+    margin-top: 20px;
+
+    font-family: 'Ubuntu';
+    font-style: italic;
+    font-weight: 300;
+    color: rgb(176, 218, 238);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.contenidouno p{
+    margin-bottom: 30px;
+    margin-top: 30px;
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 100 900;
+    color: bisque;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+}
+
+.buttons {
+    display: flex;
+    justify-content:center;
+    margin-top: 50px;
+    
+
+}
+
+.button {
+    background-color: beige;
+    color: rgb(187, 161, 247);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    margin: 0 30px;
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 100 900;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: black;
+    color: rgb(233, 157, 157);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    margin: 0 30px;
+}
+
+
+/*estilos para el contenido dos*/
+
+.banner {
+    background-image: url('/imagen/pag12.jpg');
+    background-size: contain;
+    background-position: center;
+    height: 300px; /* Ajusta la altura según tus necesidades */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenidodos {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    color: bisque;
+    padding: 2px;
+    background: rgba(0, 0, 0, 0.8);
+    
+}
+
+.contenidodos h2{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 100 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.figuras {
+    display: flex;
+    justify-content: center;
+}
+
+.figuras a {
+    margin: 0 10px;
+    color: #faf7f7;
+    font-size: 18px;
+}
+.figuras a:hover {
+   
+    color: #f3e306;
+    
+}
+
+
+
+
+/*creando la seccion 03 del contenido de la pagina*/
+
+  .galeria {
+    background-color: #d8d2be;
+    padding: 50px 0;
+    border-radius: 5px;
+   
+    }
+
+  .galeria h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #c56e6e;
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 100 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .galeria p {
+    color: #535656;
+    text-align: center;
+    font-size: 14px;
+    line-height:5px ;
+    margin-bottom: 10px;
+    font-family: 'Ubuntu';
+    font-style: italic;
+    font-weight: 300;
+    color: rgb(87, 118, 219);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    line-height: 1.6;
+  }
+
+  .contenidotres {
+    max-width: 1200px;
+    height: 450px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+  }
+
+  .contenidotres .columna {
+    flex: 1;
+    margin-top: 50px;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .contenidotres .columna img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #04416a;
+    padding: 5px;
+    border-radius: 4px;
+    
+  }
+
+  .contenidotres .columna p {
+    margin-top: 20px;
+    text-align: justify;
+    line-height: 20px;
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 100 900;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: red;
+  }
+
+  .contenidotres .columna a {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #b37f61;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #f8f6f6;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+  }
+
+  .contenidotres .columna a:hover {
+    background-color: #0056b3;
+    transform: scale(1.1); 
+  }
+
+
+  
+  /*creando el Footer - pie de pagina final de
+  la pagina*/
+  
+  .footer {
+    background-color: #e67575;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif; /* Aplicar la fuente Ubuntu */
+  }
+  
+  .filas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  h3, p {
+    color: #fff;
+    margin: 0;
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 100 900;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: rgb(233, 238, 161);
+  }
+  
+  .social-icons1 {
+    display: flex;
+  }
+  
+
+
+  /* Aquí puedes agregar tu CSS */
+  .social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons li {
+    display: inline-block;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #d5f0f4;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #0077b5; /* Cambia esto según el color que desees para el hover */
+}
+ 
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+.footer li {
+    display: inline-block;
+    margin: 0 15px;
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+.footer a img {
+    display: block;
+    width: 24px;  /* Ajusta el tamaño del ícono según tus necesidades */
+    height: 24px; /* Ajusta el tamaño del ícono según tus necesidades */
+    margin: 0 auto 5px; /* Centra el ícono y añade */
+}
+
+.part {
+    color: blue !important; /* Cambia el color del texto a azul */
+    font-size: 18px !important; /* Ajusta el tamaño de la fuente a 18 píxeles */
+    font-weight: bold !important; /* Hace el texto en negrita */
+    letter-spacing: 2px !important; /* Ajusta el espacio entre letras */
+    text-transform: uppercase !important; /* Pone todo el texto en mayúsculas */
+    line-height: 1.6 !important; /* Ajusta el interlineado */
+}
